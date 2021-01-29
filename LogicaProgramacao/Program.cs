@@ -6,20 +6,34 @@ namespace logicaprogramacao
     {
         static void Main(string[] args)
         {
+            //questao1
             Console.WriteLine(fatorial(5));
+            
+            //questao2
             Console.WriteLine(CalcularPremio(100,"basic",3));
             Console.WriteLine(CalcularPremio(100,"basic",null));
             Console.WriteLine(CalcularPremio(100,"",null));
+            
+            //questao3
             Console.WriteLine(ContarNumerosPrimos(20));
+            
+            //questao4
             Console.WriteLine(CalcularVogais("aeiou"));
+            
+            //questao5
             Console.WriteLine(CalcularValorComDescontoFormatado("R$ 6.000.800,00", "30%"));
+            
+            //questao6
             Console.WriteLine(CalcularDiferencaData("10122020", "25122020"));
+            
+            //questao7
             int[] vetor = ObterElementosPares(new int[]{1,2,3,4,5});
             foreach(int i in vetor)
             {
                 Console.WriteLine(i);
             }
             
+            //questao8
             string[] nomes = new string[] {
                 "John Doe",
                 "Jane Doe",
@@ -31,12 +45,16 @@ namespace logicaprogramacao
             foreach(string x in nomes)
                 Console.WriteLine(x);
 
+            
+            //questao9
             int[,] questao9 = TransformarEmMatriz("1,2,3,4,5,6");
             foreach(int x in questao9)
             {
                 Console.WriteLine(x);
             }
 
+            
+            //questao10
             int[] questao10 = ObterElementosFaltantes(new int[] { 1,2,3,4,5 },new int[] { 1,2,5 });
             foreach(int j in questao10)
                 Console.WriteLine(j);
